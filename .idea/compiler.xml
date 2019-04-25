@@ -10,6 +10,7 @@
         <module name="eureka-server" />
         <module name="model" />
         <module name="service-feign" />
+        <module name="service-gateway" />
         <module name="service-zuul" />
       </profile>
     </annotationProcessing>
@@ -19,6 +20,7 @@
       <module name="model" target="1.8" />
       <module name="parent" target="1.8" />
       <module name="service-feign" target="1.8" />
+      <module name="service-gateway" target="1.8" />
       <module name="service-zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>

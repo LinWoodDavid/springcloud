@@ -24,6 +24,7 @@ public class RouteController {
      * 在route配置上，添加了一个filter，
      * 该filter会将请求添加一个header,key为hello，value为world。
      *
+     * 启动项目浏览器访问 http://localhost:6085/get 可以看到添加的请求头 "Hello": "World"
      * @param routeLocatorBuilder
      * @return
      */
