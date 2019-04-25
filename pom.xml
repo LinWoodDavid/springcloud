@@ -58,17 +58,26 @@
         </dependencies>
     </dependencyManagement>
 
-    <distributionManagement>
-        <repository>
-            <id>user-releases</id>
-            <name>Nexus Release Repository</name>
-            <url>http://127.0.0.1/nexus/content/repositories/releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>user-snapshots</id>
-            <name>Nexus Snapshot Repository</name>
-            <url>http://127.0.0.1/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
+    <!--
+        maven版本高于3.1 maven-compiler-plugin 配置应修改如下
+        参考链接: https://www.cnblogs.com/dreamowneryong/p/7307908.html
+    -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                    <compilerArgs>
+                        <arg>-extdirs</arg>
+                        <arg>${project.basedir}/src/lib</arg>
+                    </compilerArgs>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

@@ -13,19 +13,13 @@
         <module name="service-zuul" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8">
-      <module name="david" target="1.8" />
-      <module name="demo" target="1.8" />
-      <module name="druid" target="1.8" />
+    <bytecodeTargetLevel>
       <module name="eureka-client" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="model" target="1.8" />
       <module name="parent" target="1.8" />
-      <module name="serice-feign" target="1.8" />
       <module name="service-feign" target="1.8" />
       <module name="service-zuul" target="1.8" />
-      <module name="tool" target="1.8" />
-      <module name="websocket" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

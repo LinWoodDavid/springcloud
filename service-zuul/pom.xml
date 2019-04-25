@@ -12,6 +12,7 @@
     <artifactId>service-zuul</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>service-zuul</name>
+    <packaging>jar</packaging>
     <description>Demo project for Spring Boot</description>
 
     <dependencies>
@@ -31,14 +32,5 @@
             <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

@@ -12,6 +12,7 @@
     <artifactId>model</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>model</name>
+    <packaging>jar</packaging>
     <description>Demo project for Spring Boot</description>
 
     <dependencies>
@@ -21,14 +22,5 @@
             <version>1.0</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

@@ -12,6 +12,7 @@
     <artifactId>eureka-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>eureka-client</name>
+    <packaging>jar</packaging>
     <description>Demo project for Spring Boot</description>
 
     <dependencies>
@@ -56,14 +57,5 @@
             <version>1.2.47</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
