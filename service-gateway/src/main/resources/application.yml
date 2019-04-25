@@ -1,0 +1,4 @@
+server:
+  port: 6085
+  tomcat:
+    uri-encoding: UTF-8
