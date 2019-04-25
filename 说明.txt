@@ -1,0 +1,31 @@
+
+======================================eureka-server======================================
+eureka-server的地址为
+http://localhost:6080
+可以看到两个EUREKA-CLIENT服务和一个SERVICE-FEIGN服务
+
+======================================eureka-client======================================
+eureka-client 有两个服务相同端口号不同的服务(6081,6082)
+访问 http://localhost:6081/hello?name=david 可以看到 hello david ,i am from port:6081
+访问 http://localhost:6082/hello?name=david 可以看到 hello david ,i am from port:6082
+
+======================================eureka-feign======================================
+service-feign 为网关层服务端口号为6085
+多次访问http://localhost:6085/hello?name=david,浏览器交替显示：
+
+hello david ,i am from port:6081
+hello david ,i am from port:6082
+
+======================================eureka-zuul======================================
+打开浏览器访问 http://localhost:6089/api-feign/hello?name=david
+浏览器显示： token is empty
+这是因为zuul不仅只是路由，并且还能过滤，做一些安全验证，这里我简单判断参数是否有token来过滤请求
+
+打开浏览器访问 http://localhost:6089/api-feign/hello?name=david&token=1
+浏览器显示： hello david ,i am from port:6081
+
+
+
+
+
+

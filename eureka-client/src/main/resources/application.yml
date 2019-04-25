@@ -1,0 +1,34 @@
+server:
+  port: 6081
+  tomcat:
+    uri-encoding: UTF-8
+spring:
+  #指明spring.application.name,在以后的服务与服务之间相互调用一般都是根据这个name
+  application:
+    name: eureka-client
+  datasource:
+    url: jdbc:mysql://localhost:3306/db1?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: dsxkj.123456
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+eureka:
+  client:
+    serviceUrl:
+      #注明自己的服务注册中心的地址
+      defaultZone: http://localhost:6080/eureka/
+
+#mybatis配置
+
+#mybatis:
+  #mapper-locations: classpath:mapper/*.xml
+#spring:
+#  datasource:
+#    driverClassName: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/db1?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8&useSSL=false
+#    username: root
+#    password: dsxkj.123456
+#    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml

@@ -1,0 +1,16 @@
+server:
+  port: 6089
+spring:
+  application:
+    name: service-zuul
+eureka:
+  client:
+    serviceUrl:
+      #服务注册地址
+      defaultZone: http://localhost:6080/eureka/
+#以/api-feign/开头的请求都转发给service-feign服务；
+zuul:
+  routes:
+    api-feign:
+      path: /api-feign/**
+      serviceId: service-feign
