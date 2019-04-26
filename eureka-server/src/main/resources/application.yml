@@ -1,5 +1,10 @@
 server:
   port: 6080
+#spring
+spring:
+  application:
+    name: eureka-server
+#eureka-server
 eureka:
   instance:
     hostname: localhost
