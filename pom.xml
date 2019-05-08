@@ -7,7 +7,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>parent</name>
     <packaging>pom</packaging>
-    <description>Spring Boot dubbo zokeeper 多模块项目</description>
+    <description>Spring Boot eureka 多模块项目</description>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
